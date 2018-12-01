@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="data/quiz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//files.newsnetz.ch/scripts/dimension_watcher.js"></script>
+</head>
+<body>
+    <script>
+        DimensionWatcher.enableParentNotification(
+          function() { 
+            /*return $('#website').width();*/
+          },
+          function() { 
+            return $('#content').height()+50;
+          }
+        );
+    </script>
+        <!-- NET-Metrix-Audit version="1.5" -->
+    <script type="text/javascript">
+        var NETMX = "http://bernerz.wemfbox.ch/cgi-bin/ivw/CP/bzgrafik";
+        document.write("<img src=\"" + NETMX + "?r=" + escape(document.referrer) + "&d=" + (Math.random() * 100000) + "&x=" + screen.width + "x" + screen.height + "\" width=\"1\" height=\"1\" alt=\"\" />");
+    </script>
+    <noscript>
+        <img src="http://bernerz.wemfbox.ch/cgi-bin/ivw/CP/bzgrafik" width="1" height="1" alt="" />
+    </noscript>
+    <div class="header">
+        <a href="http://www.bernerzeitung.ch" target="blank"><img class="bzLogo" src="data/bzlogo.png"></a>
+    </div>
+    <div id="content">
+        <div id="introTitel"><b>In die Berge oder ans Meer - Haben Sie Ihre Ferien richtig gebucht?</b></div>
+        <div id="introText">Beantworten Sie folgende Fragen und wir verraten es Ihnen.</div>
+        <div id="introBild"><img id="teaser" src="data/teaser.jpg"></div>
+        <div id="quiz"></div>
+        <div><br><hr>Konzept und Texte: Marina Bolzli/Michael Feller. Programmierung: Daniel Barben.</div>
+    </div>
+    <script src="data/decisionTree.js"></script>
+    <script src="data/google.js" type="text/javascript"></script>
+</body>
+</html>
